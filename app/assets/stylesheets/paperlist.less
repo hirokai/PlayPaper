@@ -1,0 +1,218 @@
+
+div#maindiv {
+  position: relative;
+  top: 45px;
+  left: 10px;
+  width: auto;
+  margin: 50px 10px 10px 10px;
+  height: 600px;
+  margin-bottom: 10px ! important;
+  padding-bottom: 10px;
+}
+
+#list {
+  font-size: 13px;
+}
+
+#analysis {
+  display: none;
+  width: 100%;
+  height: 700px;
+  margin: 30px;
+  text-align: center;
+  background: #eeeeee;
+  svg {
+    circle:hover {
+    }
+  }
+  #analysis-info {
+    height: 30px;
+    width: 200px;
+    color: black;
+  }
+}
+
+div.clear {
+  clear: both;
+}
+
+#list {
+  height: 600px;
+  tr,td > div {
+    margin:0px;
+    padding:0px;
+//    height: 30px;
+//    min-height: 30px;
+//    max-height: 30px;
+   // overflow: scroll;
+  }
+  .title {
+    width: 300px;
+  }
+  .citation {
+    width: 200px;
+    max-width: 200px;
+  }
+  .authors {
+    width: 300px;
+  }
+  .view {
+    width: 120px;
+  }
+  .availability {
+    width: 20px;
+  }
+  .date {
+    width: 200px;
+  }
+  a {
+    cursor: pointer;
+  }
+  a.remove-entry {
+  color:red;
+  }
+  a.pdf-link {
+    text-decoration: none;
+  }
+  .label-pdf-link {
+    background-color: purple;
+  }
+}
+
+#remove-confirm .title-placeholder {
+  font-weight: bold;
+}
+
+table#list .tags {
+//  display: none;
+  width: 80px;
+  div {
+    max-height: 100px;
+  overflow: scroll;
+  }
+}
+
+#info-window .modal-body {
+  width: 800px;  
+  #info-table {
+    .key {
+      width: 120px;
+    }
+    .value {
+      width: 700px;
+    }
+    td {
+      padding-bottom: 10px;
+    }
+  }
+  .tags {
+    width: 100%;
+    float:left;
+      li {
+        display: inline;
+      }
+  }
+  #input-comment{
+    width: 100%;
+    height: 70px;
+  }
+}
+
+#statusbar {
+  display: none;
+  position: fixed;
+  background: #ccc;
+  bottom: 0px;
+  width: 100%;
+  height: 30px;
+  margin: 0px;
+  padding: 5px 10px; 
+}
+
+#tools-button {
+  display: inline;
+  margin: 0px 10px 0px 0px;
+}
+
+.hidden {
+  display: none;  
+}
+
+td.drag-hover {
+  background: pink;
+}
+
+ul.stacked {
+  margin-top: 10px;
+  li {
+    list-style-type: none;
+    line-height: 20px;
+    height: 30px;
+    a {
+      margin: 2px 0px 3px;
+      padding: 8px 12px;
+      text-decoration: none;
+      cursor: default;  
+      &.active {
+        background: rgb(0,136,204);
+      }
+      &:hover {
+        background: rgb(238,238,238);
+      }
+      border-radius: 5px;
+    }
+  }
+}
+
+#tagModal {
+  #tag-input {
+    width: 100%;
+  }
+}
+
+span.tagnum {
+  float: right;
+}
+
+
+
+#taglist-heading {
+  text-align: center;
+  font-size: 12px;
+  margin: 20px 0px -10px 0px;
+}
+
+h4.paperlist-help {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+table.paperlist-help {
+  font-size: 14px;
+  td.key {
+    font-weight: bold;
+    width: 80px;
+  }
+  td.exp {
+    width: 200px;
+  }
+  td.key {
+    margin: 0px;
+  }
+  td.exp {
+    margin-bottom: 15px;
+  }
+}
+
+#button-help {
+  margin-right: 50px;
+}
+#button-logout {
+
+  margin-right: 10px;
+}
+
+
+#action-toolbar {
+  float: right;
+}

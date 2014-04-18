@@ -1,0 +1,73 @@
+@(message: String)
+
+
+<!DOCTYPE html>
+<head><title> PaperServer</title>
+    <link rel="stylesheet" type="text/css" href="@routes.Assets.at("stylesheets/welcome.css")">
+    <meta name="description" content="Blazingly fast web-based software for online journal article management.">
+    <meta name="keywords" content="Reference manager, Scala">
+</head>
+<body><div id="fb-root"></div>
+    <script>(function(d, s, id) {var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    <h1>Welcome to PaperServer - alpha test version</h1>
+    <div class="headline">Works on Google Chrome, Firefox, and Safari</div>
+    <div id="container"><div id="toppanel"><h3>Simple and unified UI for all journals</h3>
+        <div>Displays papers across from various journals in simple and unform layout. Works on a web browser. No standalone software needed.</div>
+        <h3> Fast, smooth, and automatic</h3>
+        <div> Blazingly fast browsing by keyboard shortcuts. All full texts are automatically saved when you visit online journal articles (you can disable this if you want).</div>
+        <h3>EPUB export</h3>
+        <div>Papers can be exported as portable EPUB files. You can even read papers on your iPhone!</div>
+        <h3>Library import &amp; export</h3>
+        <div>You can import an existing library.</div>
+        <div id="detail-link"><a href="detail">Read more...</a>
+        </div>
+    </div>
+        <div id="registered"><h3>Already registered?</h3>
+            <div><a href="/start"><div id="btn-login">Log in</div>
+            </a>
+            </div>
+            <div><a href="https://chrome.google.com/webstore/detail/paperserver/pdmapcooblalcfeoidacnahebeceeihh" alt="Download plugin"><div id="btn-download">Download the plugin for Google Chrome</div>
+            </a>
+                <div id="box-or">Or</div>
+                <a id="btn-bookmarklet" title="Upload paper" href="javascript:document.getElementsByTagName(&#39;body&#39;)%5B0%5D.appendChild(document.createElement(&#39;script&#39;)).setAttribute(&#39;src&#39;,&#39;http://paperserver.jp/static/js/bookmarklet.js&#39;);">Drag a bookmarklet to Browser toolbar.</a>
+            </div>
+        </div>
+        <div id="newuser"><h3>New user?</h3>
+            <div><a href="http://paperserver.jp/signup"><div id="btn-signup">Sign up</div>
+            </a>
+            </div>
+            <div id="auth-explain">Authentication will be done by Mozilla Persona.</div>
+            <div class="detail">This only requires your email address. This is better than Google or Facebook login. Read these (
+                <a href="http://techcrunch.com/2012/09/27/mozillas-persona-login-system-is-now-in-beta-takes-on-openid-and-oauth/">English,</a>
+                <a href="http://japanese.engadget.com/2012/09/27/mozilla-persona/">Japanese</a>
+                ) articles.</div>
+        </div>
+        <div class="fb-like" data-href="http://paperserver.jp/welcome" data-send="false" data-width="300" data-show-faces="false"></div>
+    </div>
+    <div class="footer"><ul><li><a href="@routes.Assets.at("doc/ja/intro.html")">More info</a>
+        (
+        <a href="/assets/doc/ja/intro.html">Japanese</a>
+        )</li>
+        <li><a href="http://github.com/hirokai/PaperServer">Source code on Github</a>
+        </li>
+        <li><a href="mailto:hkai@@berkeley.edu">Contact the webmaster</a>
+        </li>
+    </ul>
+    </div>
+</body>
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-40443000-1', 'paperserver.jp');
+ga('send', 'pageview');
+
+</script>
